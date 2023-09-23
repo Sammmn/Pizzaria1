@@ -51,10 +51,12 @@ public class Product {
         categoryList.showCategories();
 
         int pc = read.nextInt();
+        read.close();
 
         Category category = categoryList.getCategoryById(pc);
 
         Product product = new Product(pn, pp, category);
-
     }
+
+
 }
